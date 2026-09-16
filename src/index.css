@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import "tailwindcss";
+
+:root{
+  --couleur-une: #0d1b2a;
+  --couleur-une-sombre: #030b1a;
+  --couleur-deux: #1b263b;
+  --couleur-trois: #415a77;
+  --couleur-quatre: #d4af37;
+  --couleur-cinq: #f7f3eb;
+}
+
+html,
+body{
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--couleur-une);
+}
+
+#root{
+  min-height: 100vh;
+  background-color: var(--couleur-une);
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--couleur-cinq);
+}
+
