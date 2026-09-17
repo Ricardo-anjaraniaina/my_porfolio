@@ -3,6 +3,7 @@ import Hero from "./components/heros"
 import About from "./components/about"
 import Loader from "./components/loader"
 import { useState } from "react"
+import Service from "./components/service"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -16,6 +17,7 @@ function App() {
           <Navbar/>
           <Hero/>
           <About/>
+          <Service/>
         </div>
       )}
     </>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import "tailwindcss";
 
@@ -9,6 +9,7 @@
   --couleur-trois: #415a77;
   --couleur-quatre: #d4af37;
   --couleur-cinq: #f7f3eb;
+  --police-p: "Open Sans",sans-serif 
 }
 
 html,
