@@ -40,8 +40,9 @@ function ServiceItem({ service, index, setActive }: { service: typeof services[0
     return (
         <div ref={ref} className="h-screen flex items-center p-10">
             <div className='h-full flex flex-col gap-5 justify-center items-center text-center'>
-                <Lottie src={service.illustration} loop autoplay className="w-[80%] bg-(--couleur-trois) p-3 rounded-xl" />
-                <p className='text-xl'>{service.description}</p>
+                <h1 className='md:hidden text-2xl'>{service.title}</h1>
+                <Lottie src={service.illustration} loop autoplay className="w-full bg-(--couleur-une) p-3 rounded-xl" />
+                <p className='text-xl tracking-wider'>{service.description}</p>
             </div>
         </div>
     )
@@ -53,12 +54,12 @@ export default function Service() {
     return (
         <section className="w-full bg-(--couleur-deux) rounded-3xl">
             <div className="w-full h-full p-8 flex flex-col gap-6">
-                <div className="w-full flex justify-between items-center">
-                    <h1 className="w-1/2 text-5xl text-(--couleur-quatre)">What can we build together ?</h1>
-                    <p className="w-1/2 text-3xl text-center">From a simple idea to a digital product, <br />let's make it happen.</p>
+                <div className="w-full flex md:flex-row flex-col justify-between items-center">
+                    <h1 className="md:w-1/2 text-5xl text-(--couleur-quatre) md:text-center">What can we build together ?</h1>
+                    <p className="md:w-1/2 text-3xl text-left md:text-center">From a simple idea to a digital product, <br />let's make it happen.</p>
                 </div>
                 <div className="grid md:grid-cols-2 grid-cols-1">
-                    <div className="md:sticky md:top-0 md:h-screen ">
+                    <div className="hidden md:block md:sticky md:top-0 md:h-screen ">
                         <div className="h-full flex flex-col justify-center p-10 gap-5">
                            {services.map((service, index) => (
                             <motion.h1
