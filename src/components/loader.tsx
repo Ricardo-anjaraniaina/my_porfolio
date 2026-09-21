@@ -36,14 +36,14 @@ function Loader({ onComplete }: LoaderProps) {
     return(
         <>
             <motion.div 
-                className="fixed inset-0 bg-(--couleur-une-sombre) z-50 flex justify-center items-center overflow-hidden"
+                className="fixed inset-0 bg-(--couleur-une-sombre) w-screen h-screen z-50 flex justify-center items-center overflow-hidden"
                 variants={containerUp}
                 initial="hidden"
                 animate="show"
                 onAnimationComplete={onComplete}
             >
                 <motion.h1 
-                    className="text-8xl font-bold"
+                    className="md:text-8xl text-5xl font-bold"
                     variants={textReveal}
                     initial="hidden"
                     animate="show"
